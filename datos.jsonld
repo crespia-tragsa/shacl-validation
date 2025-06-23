@@ -1,0 +1,105 @@
+{
+  "@context": "https://www.w3.org/2018/credentials/v1",
+  "type": "VerifiablePresentation",
+  "verifiableCredential": [
+    {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+        ],
+        "type": [
+            "VerifiableCredential"
+        ],
+        "id": "https://compliance.tragsatec.es/.well-known/participant.json",
+        "issuer": "did:web:compliance.tragsatec.es",
+        "issuanceDate": "2025-05-29T10:48:42Z",
+        "credentialSubject": {
+            "id": "https://compliance.tragsatec.es/.well-known/participant.json#subject",
+            "type": "gx:LegalParticipant",
+            "gx:legalName": "Empresa de Transformacion Agraria, S.A., S.M.E., M.P",
+            "gx:legalRegistrationNumber": {
+            "id": "https://compliance.tragsatec.es/.well-known/lrn.json#subject",
+            "gx:vatID": "ESA79365821"
+            },
+            "gx:headquarterAddress": {
+            "gx:streetAddress": "Maldonado, 58",
+            "gx:postalCode": "28006",
+            "gx:locality": "Madrid",
+            "gx:countrySubdivisionCode": "ES-M"
+            },
+            "gx:legalAddress": {
+            "gx:streetAddress": "Maldonado, 58",
+            "gx:postalCode": "28006",
+            "gx:locality": "Madrid",
+            "gx:countrySubdivisionCode": "ES-M"
+            }
+        },
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2025-05-29T10:48:44Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:compliance.tragsatec.es#X509-JWK2020",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iH8GL2OUVsLxSOZHjOO4F6FbO5JTN73Zb7b_JOm2Ngg-1DQ0YOpp0edMdSUjfL8FFILmGiG-NLTJ5W4Z2C2tD3b7qzOcgB45g8TTkrjlkIbEjBncAGYwRBZGkpi59xRfp0rmMzdg0gy_Au2RMu583cHPOy3OPaDw8x1dtx37n9XqLVKpqa3SesZKdGjJt4s7IAl9br35U_MlIV-3gK_QrbVhvJGsH6ZVzkQLdyJLml8Qe0Pkys5lmE2gF8bGssY8P5Ky37OIaXdUS58RQn7tKKEQdOGH9ImIl80DPIkMTI30B89K_edB8QJnS9TJKfp95SOew0JxsAfSXu0gyjFgmxtawIzQSJuOd4r1bbU2ShgROGPwANG1ZkvpHpNHEWspV32Y1ymjJ41v785mrOU6TWlSmiXqmEf658Tk2If9FbmBkPB2BGkBJq1fkvJ_u9Mauf4Dzo_JZ9fovx6ixHRH-D_4WxZnQWQhaEfCmElV6mOQuL_3sFnaac1V84q8Sfp2rDfUPsYy8qFDRa5_frjXd3J5E9OYswl6hwcJXnEveWubQCp-YOGSpif9J0DZqQGpTgS-oTak-FclTXkaAFK-EGcavveBHDCNiAuUi3G-pnswL78f6lgwHzFjhgw-8V2Jd_xL45WrKB_y5EcnHVMh3QalanLujZPXagsRRs4C6vs"
+        }
+    },
+    {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1"
+        ],
+        "type": [
+            "VerifiableCredential"
+        ],
+        "id": "https://compliance.tragsatec.es/.well-known/lrn.json",
+        "issuer": "did:web:registration.lab.gaia-x.eu:v1",
+        "issuanceDate": "2025-05-26T14:19:35.973Z",
+        "credentialSubject": {
+            "@context": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+            "type": "gx:legalRegistrationNumber",
+            "id": "https://compliance.tragsatec.es/.well-known/lrn.json",
+            "gx:vatID": "ESA79365821",
+            "gx:vatID-countryCode": "ES"
+        },
+        "evidence": [
+            {
+                "gx:evidenceURL": "http://ec.europa.eu/taxation_customs/vies/services/checkVatService",
+                "gx:executionDate": "2025-05-26T14:19:35.973Z",
+                "gx:evidenceOf": "gx:vatID"
+            }
+        ],
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2025-05-26T14:19:35.986Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:registration.lab.gaia-x.eu:v1#X509-JWK2020",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..mA3LWZDuqkcIAetvvQGZf6UUAgHjIb_mM4jWU2Cq0hoqKLEMD-PJteWewU1IHJwfup9xPo3ImOWAvUQURE-WzcUzUlDLwcREymAYbENuaN0giuYYRiQ5xqHOLEiRi-kVeZ_rDcWJDWeJ53dFv49At_8XXY8fol9tlHnyutImQcAdBA31HRJIlLxRaZiYyXSAaUPY61pzItTIEmT1dl3FbJVTdkYzNICpdBsEb5nwrEz2HAbwWEVDVfnLpNAo0mRe91imfenfZz9wwppg2_-JI3RaEjT_ACPZ7U5sMBqOhANmjwsSl3rv4pudeH1ZHphB582D--wtzCdEVY1XNSha0g"
+        }
+    },
+    {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+        ],
+        "type": [
+            "VerifiableCredential"
+        ],
+        "id": "https://compliance.tragsatec.es/.well-known/gx-terms-and-cs.json",
+        "issuer": "did:web:compliance.tragsatec.es",
+        "issuanceDate": "2025-05-29T10:40:01Z",
+        "credentialSubject": {
+            "id": "https://compliance.tragsatec.es/.well-known/gx-terms-and-cs.json#subject",
+            "type": "gx:GaiaXTermsAndConditions",
+            "gx:termsAndConditions": "The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD)."
+        },
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2025-05-29T10:40:03Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:compliance.tragsatec.es#X509-JWK2020",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..H5otleiVS0srNZUPQplTnJV7EvsY5vVuDRGhokL-8SQJwbuYa2FQ8dzMznt-1bJneTj7cbTzphUmmcvID0TtlHttckYhDYAt7EHGwoxvvO-rO8CZOkhY7_qP5Mr4GQtbNGUYwl8cfAMdwolpVu-w699R4wxOSeX5ds6uNhXd8BEUoO_XWJPgNEdwd6hpldu18Jc6O69TM2PTJthROxggLg1iLQEorj48cUEmeYpITjHx79mKxBvw8D2bfAWwjuOSZ1ZCNtvzjAXV7KWK9E7R-rprpDN4zJnWgEEV2oJCSpjXKdC-jAzkGuNvWBNIH-gizMYA4RBDk4QRsxZTRV95JqQuXA7EfFb6TMsTx_LLvEcP8V2ZC5UdjVf-mn8cLhZRQXt6bbJHyHFnsGj9JgxYJcodDhICpPM5BlJ_VZ1B3p_eWmPYPz-uIDL6jmUAcI39KRghx8gsEmP9FnQhshRqiYSA-D4otJw5K9Rd81V_MvUZ4AwwN0xvPyYYq23g7BhMQztptHIf2mwlE1hY0vFPr6Go9kk3eRl03y9cPSnWLOhsnSW-PB-XNaAqVRVZOoDBAGESJc9fy8XYE-vnW9eh0hT33DuSLju2ziHjhIxWKtO-pSiOVfJ48IWRUNqABrqdhJjPRw6xJVF-viFO-VmCnJ7RYcHul61cguLuMzNIw0Q"
+        }
+    }
+  ]
+}
